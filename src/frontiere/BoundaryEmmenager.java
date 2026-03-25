@@ -44,10 +44,10 @@ public class BoundaryEmmenager {
 
 		do {
 			effetPotionMin = Clavier
-					.entrerEntier("Quelle est la force de la potion la plus faible que vous produisez ?\n");
+					.entrerEntier("Quelle est la force de la potion la plus faible que vous produisez ?");
 
 			effetPotionMax = Clavier
-					.entrerEntier("Quelle est la force de la potion la plus forte que vous produisez ?\n");
+					.entrerEntier("Quelle est la force de la potion la plus forte que vous produisez ?");
 
 			if (effetPotionMax < effetPotionMin) {
 				System.out.println("Attention Druide, vous vous êtes trompé entre le min et le max\n");
