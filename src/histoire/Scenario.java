@@ -16,6 +16,7 @@ import frontiere.BoundaryLeVillage;
 import frontiere.BoundaryLibererEtal;
 import frontiere.BoundaryPrendreEtal;
 import personnages.Chef;
+import personnages.Gaulois;
 import villagegaulois.Village;
 
 public class Scenario {
@@ -24,6 +25,9 @@ public class Scenario {
 		Village village = new Village("le village des irréductibles", 10, 5);
 		Chef abraracourcix = new Chef("Abraracourcix", 10, village);
 		village.setChef(abraracourcix);
+		Gaulois bichBouch = new Gaulois("bichBouch Le Marchand",10);
+		village.ajouterHabitant(bichBouch);
+		village.installerVendeur(bichBouch, "AK", 5);
 
 		ControlEmmenager controlEmmenager = new ControlEmmenager(village);
 		ControlAfficherVillage controlAfficherVillage = new ControlAfficherVillage(
