@@ -76,10 +76,12 @@ public class Village {
 	public int installerVendeur(Gaulois vendeur, String produit,
 			int nbProduit) {
 		int indiceEtal = marche.trouverEtalLibre();
+		
 		if (indiceEtal >= 0) {
 			marche.utiliserEtal(indiceEtal, vendeur, produit, nbProduit);
 		}
 		return indiceEtal;
+	
 	}
 
 	public void partirVendeur(Gaulois vendeur) {

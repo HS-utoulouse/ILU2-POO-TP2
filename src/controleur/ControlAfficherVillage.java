@@ -15,7 +15,7 @@ public class ControlAfficherVillage {
 
 	public String donnerNomVillage() {
 		return village.getNom();
-	}
+	}   
 
 	public int donnerNbEtals() {
 		return village.donnerNbEtal();

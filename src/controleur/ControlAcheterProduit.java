@@ -30,6 +30,7 @@ public class ControlAcheterProduit {
 	
 	public int quantiteProduit(String nomVendeur) {
 		Etal etal = controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur);
+		System.out.println(etal.toString());
 		return etal.getQuantite();
 	}
 	
